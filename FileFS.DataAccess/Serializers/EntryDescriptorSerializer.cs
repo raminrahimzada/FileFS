@@ -13,7 +13,7 @@ namespace FileFS.DataAccess.Serializers
     /// <summary>
     /// File descriptor serializer implementation.
     /// </summary>
-    public class EntryDescriptorSerializer : ISerializer<EntryDescriptor>
+    public sealed class EntryDescriptorSerializer : ISerializer<EntryDescriptor>
     {
         private readonly IFilesystemDescriptorAccessor _filesystemDescriptorAccessor;
         private readonly ILogger _logger;

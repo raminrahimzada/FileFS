@@ -6,7 +6,7 @@ namespace FileFS.Cli
     /// <summary>
     /// Entry point container class.
     /// </summary>
-    internal class Program
+    internal sealed class Program
     {
         /// <summary>
         /// Main entry point for the application.

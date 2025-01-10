@@ -5,7 +5,7 @@ namespace FileFS.DataAccess.Exceptions
     /// <summary>
     /// Exception that should be thrown when there is no descriptor with given name.
     /// </summary>
-    public class EntryDescriptorNotFound : FileFsException
+    public sealed class EntryDescriptorNotFound : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EntryDescriptorNotFound"/> class.

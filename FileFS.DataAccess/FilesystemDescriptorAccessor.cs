@@ -10,7 +10,7 @@ namespace FileFS.DataAccess
     /// <summary>
     /// Filesystem descriptor access implementation.
     /// </summary>
-    public class FilesystemDescriptorAccessor : IFilesystemDescriptorAccessor
+    public sealed class FilesystemDescriptorAccessor : IFilesystemDescriptorAccessor
     {
         private readonly IStorageConnection _connection;
         private readonly ISerializer<FilesystemDescriptor> _serializer;

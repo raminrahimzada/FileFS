@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("export", HelpText = "Exports file from FileFS storage to a new file in your filesystem.")]
-    public class ExportOptions : BaseOptions
+    public sealed class ExportOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a existing file inside FileFS storage.

@@ -10,7 +10,7 @@ namespace FileFS.DataAccess
     /// <summary>
     /// Implementation of service for locking particular entries or for performing "stop-the-world" locking.
     /// </summary>
-    public class StorageOperationLocker : IStorageOperationLocker
+    public sealed class StorageOperationLocker : IStorageOperationLocker
     {
         private readonly object _globalLocker;
 

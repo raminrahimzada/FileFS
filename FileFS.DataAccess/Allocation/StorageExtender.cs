@@ -10,7 +10,7 @@ namespace FileFS.DataAccess.Allocation
     /// <summary>
     /// Implementation of storage extender.
     /// </summary>
-    public class StorageExtender : IStorageExtender
+    public sealed class StorageExtender : IStorageExtender
     {
         private readonly IStorageConnection _connection;
         private readonly IFilesystemDescriptorAccessor _filesystemDescriptorAccessor;

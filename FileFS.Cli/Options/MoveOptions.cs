@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("move", HelpText = "Move directory or file inside FileFS storage.")]
-    public class MoveOptions : BaseOptions
+    public sealed class MoveOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of existing directory or file to move.

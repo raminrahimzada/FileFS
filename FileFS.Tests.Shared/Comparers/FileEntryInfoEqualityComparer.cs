@@ -7,7 +7,7 @@ namespace FileFS.Tests.Shared.Comparers
     /// <summary>
     /// Comparer implementation for <see cref="FileFsEntryInfo"/>.
     /// </summary>
-    public class FileEntryInfoEqualityComparer : IEqualityComparer<FileFsEntryInfo>
+    public sealed class FileEntryInfoEqualityComparer : IEqualityComparer<FileFsEntryInfo>
     {
         /// <inheritdoc />
         public bool Equals(FileFsEntryInfo x, FileFsEntryInfo y)

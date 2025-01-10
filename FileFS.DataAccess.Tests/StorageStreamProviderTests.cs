@@ -13,7 +13,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests
 {
-    public class StorageStreamProviderTests
+    public sealed class StorageStreamProviderTests
     {
         private readonly string _testStorageFileName;
 

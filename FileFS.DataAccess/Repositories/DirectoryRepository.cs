@@ -12,7 +12,7 @@ namespace FileFS.DataAccess.Repositories
     /// <summary>
     /// Directory repository implementation.
     /// </summary>
-    public class DirectoryRepository : EntryRepository, IDirectoryRepository
+    public sealed class DirectoryRepository : EntryRepository, IDirectoryRepository
     {
         private readonly IFilesystemDescriptorAccessor _filesystemDescriptorAccessor;
         private readonly IEntryDescriptorRepository _entryDescriptorRepository;

@@ -12,7 +12,7 @@ namespace FileFS.DataAccess.Allocation
     /// <summary>
     /// Storage optimizer implementation.
     /// </summary>
-    public class StorageOptimizer : IStorageOptimizer
+    public sealed class StorageOptimizer : IStorageOptimizer
     {
         private readonly IStorageConnection _connection;
         private readonly IEntryDescriptorRepository _entryDescriptorRepository;

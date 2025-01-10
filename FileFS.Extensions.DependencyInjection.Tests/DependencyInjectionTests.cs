@@ -15,7 +15,7 @@ namespace FileFS.Extensions.DependencyInjection.Tests
     /// <summary>
     /// Tests for IoC container services resolving.
     /// </summary>
-    public class DependencyInjectionTests
+    public sealed class DependencyInjectionTests
     {
         [Fact]
         public void AddFileFsClient_ShouldSuccessfullyResolveClient()

@@ -1,9 +1,9 @@
 ﻿namespace FileFS.DataAccess.Constants
 {
     /// <summary>
-    /// Class containing constants for paths.
+    /// sealed class containing constants for paths.
     /// </summary>
-    public class PathConstants
+    public sealed class PathConstants
     {
         /// <summary>
         /// Represents path separator between directories.

@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("update", HelpText = "Update file content inside FileFS storage.")]
-    public class UpdateOptions : BaseOptions
+    public sealed class UpdateOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a file to update.

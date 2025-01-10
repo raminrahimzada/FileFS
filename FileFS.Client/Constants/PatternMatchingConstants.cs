@@ -1,9 +1,9 @@
 ﻿namespace FileFS.Client.Constants
 {
     /// <summary>
-    /// Class containing pattern matching constants.
+    /// sealed class containing pattern matching constants.
     /// </summary>
-    public class PatternMatchingConstants
+    public sealed class PatternMatchingConstants
     {
         /// <summary>
         /// Pattern that represents valid filename for FileFS storage.

@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("init", HelpText = "Initialize new storage instance of FileFS.")]
-    public class InitOptions : BaseOptions
+    public sealed class InitOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets size of a newly created storage in bytes.

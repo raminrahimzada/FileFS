@@ -3,7 +3,7 @@
     /// <summary>
     /// Type that represents options for <see cref="FileFsClient"/>.
     /// </summary>
-    public class FileFsClientOptions
+    public sealed class FileFsClientOptions
     {
         /// <summary>
         /// Gets or sets a value indicating whether all client operations should be transacted.

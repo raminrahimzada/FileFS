@@ -14,7 +14,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Serializers
 {
-    public class FilesystemDescriptorSerializerTests
+    public sealed class FilesystemDescriptorSerializerTests
     {
         [Theory]
         [InlineData(0, 0, 100)]

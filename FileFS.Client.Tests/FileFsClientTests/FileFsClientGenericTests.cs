@@ -21,7 +21,7 @@ using Xunit;
 
 namespace FileFS.Client.Tests.FileFsClientTests
 {
-    public class FileFsClientGenericTests
+    public sealed class FileFsClientGenericTests
     {
         private readonly Mock<IEntryRepository> _entryRepositoryMock;
         private readonly Mock<IFileRepository> _fileRepositoryMock;

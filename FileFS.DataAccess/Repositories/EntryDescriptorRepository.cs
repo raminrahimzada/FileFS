@@ -14,7 +14,7 @@ namespace FileFS.DataAccess.Repositories
     /// <summary>
     /// File descriptor repository implementation.
     /// </summary>
-    public class EntryDescriptorRepository : IEntryDescriptorRepository
+    public sealed class EntryDescriptorRepository : IEntryDescriptorRepository
     {
         private readonly IStorageConnection _connection;
         private readonly IFilesystemDescriptorAccessor _filesystemDescriptorAccessor;

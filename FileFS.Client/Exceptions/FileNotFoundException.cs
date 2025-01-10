@@ -5,7 +5,7 @@ namespace FileFS.Client.Exceptions
     /// <summary>
     /// Exception that should be thrown when file not found in FileFS storage.
     /// </summary>
-    public class FileNotFoundException : FileFsException
+    public sealed class FileNotFoundException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="FileNotFoundException"/> class.

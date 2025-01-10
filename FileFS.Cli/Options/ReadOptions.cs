@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("read", HelpText = "Read contents of file inside FileFS storage.")]
-    public class ReadOptions : BaseOptions
+    public sealed class ReadOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a file to read.

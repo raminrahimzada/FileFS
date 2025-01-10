@@ -5,7 +5,7 @@ namespace FileFS.Client.Exceptions
     /// <summary>
     /// Exception that should be thrown when directory already exists in FileFS storage.
     /// </summary>
-    public class DirectoryAlreadyExistsException : FileFsException
+    public sealed class DirectoryAlreadyExistsException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DirectoryAlreadyExistsException"/> class.

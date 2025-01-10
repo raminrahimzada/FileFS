@@ -20,7 +20,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Allocation
 {
-    public class FileAllocatorTests
+    public sealed class FileAllocatorTests
     {
         private const int FileNameLength = 100;
 

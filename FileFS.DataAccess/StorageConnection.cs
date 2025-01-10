@@ -9,7 +9,7 @@ namespace FileFS.DataAccess
     /// <summary>
     /// Stateless storage connection implementation.
     /// </summary>
-    public class StorageConnection : IStorageConnection
+    public sealed class StorageConnection : IStorageConnection
     {
         private readonly IStorageStreamProvider _storageStreamProvider;
         private readonly ILogger _logger;

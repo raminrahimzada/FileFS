@@ -14,7 +14,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests
 {
-    public class StorageConnectionTests
+    public sealed class StorageConnectionTests
     {
         [Theory]
         [InlineData("Hello, World!", 128, 1000)]

@@ -13,7 +13,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests
 {
-    public class FilesystemDescriptorAccessorTests
+    public sealed class FilesystemDescriptorAccessorTests
     {
         [Theory]
         [InlineData(1000, 100)]

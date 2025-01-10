@@ -9,7 +9,7 @@ namespace FileFS.DataAccess
     /// <summary>
     /// File-based storage stream provider.
     /// </summary>
-    public class StorageStreamProvider : IStorageStreamProvider
+    public sealed class StorageStreamProvider : IStorageStreamProvider
     {
         private readonly ILogger _logger;
         private readonly string _fileFsStoragePath;

@@ -12,7 +12,7 @@ using Xunit;
 
 namespace FileFS.Client.Tests
 {
-    public class ExternalFileManagerTests
+    public sealed class ExternalFileManagerTests
     {
         private readonly string _testStorageFileName;
 

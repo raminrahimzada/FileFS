@@ -18,7 +18,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Serializers
 {
-    public class EntryDescriptorSerializerTests
+    public sealed class EntryDescriptorSerializerTests
     {
         [Theory]
         [InlineData(65, "/foo", 100, 100, 0, 0, EntryType.File)]

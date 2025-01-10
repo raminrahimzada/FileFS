@@ -7,7 +7,7 @@ namespace FileFS.Client
     /// <summary>
     /// Implementation of manager for external (non FileFS managed) files manipulation.
     /// </summary>
-    public class ExternalFileManager : IExternalFileManager
+    public sealed class ExternalFileManager : IExternalFileManager
     {
         private readonly ILogger _logger;
 

@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("create-dir", HelpText = "Create new file inside FileFS storage.")]
-    public class CreateDirectoryOptions : BaseOptions
+    public sealed class CreateDirectoryOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a directory to create.

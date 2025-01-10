@@ -7,7 +7,7 @@ namespace FileFS.Client.Transactions
     /// Null-object implementation of <see cref="ITransactionWrapper"/>.
     /// </summary>
     [ExcludeFromCodeCoverage]
-    public class NullTransactionWrapper : ITransactionWrapper
+    public sealed class NullTransactionWrapper : ITransactionWrapper
     {
         /// <inheritdoc />
         public void BeginTransaction()

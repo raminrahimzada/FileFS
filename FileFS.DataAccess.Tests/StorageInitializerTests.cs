@@ -20,7 +20,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests
 {
-    public class StorageInitializerTests
+    public sealed class StorageInitializerTests
     {
         [Theory]
         [InlineData(1000, 10)]

@@ -1,7 +1,7 @@
 ﻿namespace FileFS.Client.Constants
 {
     /// <summary>
-    /// Class containing constants for synchronization and inter-process locking.
+    /// sealed class containing constants for synchronization and inter-process locking.
     /// </summary>
     public static class SynchronizationConstants
     {

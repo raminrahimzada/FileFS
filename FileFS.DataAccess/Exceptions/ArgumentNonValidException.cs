@@ -3,7 +3,7 @@
     /// <summary>
     /// Exception that should be thrown when there is non valid argument value passed.
     /// </summary>
-    public class ArgumentNonValidException : FileFsException
+    public sealed class ArgumentNonValidException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ArgumentNonValidException"/> class.

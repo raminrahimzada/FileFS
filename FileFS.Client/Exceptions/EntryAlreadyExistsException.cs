@@ -5,7 +5,7 @@ namespace FileFS.Client.Exceptions
     /// <summary>
     /// Exception that should be thrown when entry already exists in FileFS storage.
     /// </summary>
-    public class EntryAlreadyExistsException : FileFsException
+    public sealed class EntryAlreadyExistsException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EntryAlreadyExistsException"/> class.

@@ -9,7 +9,7 @@ using Serilog;
 namespace FileFS.Cli
 {
     /// <summary>
-    /// Class that contains helper methods used by command handlers.
+    /// sealed class that contains helper methods used by command handlers.
     /// </summary>
     internal static class CommandHandlerHelper
     {

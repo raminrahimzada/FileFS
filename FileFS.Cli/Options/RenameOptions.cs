@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("rename", HelpText = "Rename file in FileFS storage.")]
-    public class RenameOptions : BaseOptions
+    public sealed class RenameOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of existing directory or file to rename.

@@ -12,7 +12,7 @@ namespace FileFS.DataAccess.Allocation
     /// <summary>
     /// Linear file allocator implementation.
     /// </summary>
-    public class FileAllocator : IFileAllocator
+    public sealed class FileAllocator : IFileAllocator
     {
         private readonly IStorageConnection _connection;
         private readonly IFilesystemDescriptorAccessor _filesystemDescriptorAccessor;

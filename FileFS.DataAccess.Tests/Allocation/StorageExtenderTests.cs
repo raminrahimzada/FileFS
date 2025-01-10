@@ -16,7 +16,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Allocation
 {
-    public class StorageExtenderTests
+    public sealed class StorageExtenderTests
     {
         private const int FileNameLength = 5;
 

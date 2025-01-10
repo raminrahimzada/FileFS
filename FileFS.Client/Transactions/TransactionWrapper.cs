@@ -14,7 +14,7 @@ namespace FileFS.Client.Transactions
     /// access to FileFS storage.
     /// </summary>
     [ExcludeFromCodeCoverage]
-    public class TransactionWrapper : ITransactionWrapper
+    public sealed class TransactionWrapper : ITransactionWrapper
     {
         private readonly ILogger _logger;
         private readonly Mutex _mutex;

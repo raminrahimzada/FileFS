@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("delete", HelpText = "Deletes file from FileFS storage.")]
-    public class DeleteOptions : BaseOptions
+    public sealed class DeleteOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a file to delete.

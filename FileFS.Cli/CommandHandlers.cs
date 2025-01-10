@@ -11,9 +11,9 @@ using FileFS.DataAccess.Extensions;
 namespace FileFS.Cli
 {
     /// <summary>
-    /// Class that contains methods used to handle commands.
+    /// sealed class that contains methods used to handle commands.
     /// </summary>
-    internal class CommandHandlers
+    internal sealed class CommandHandlers
     {
         /// <summary>
         /// Method that handles "init" command.

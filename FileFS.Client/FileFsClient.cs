@@ -23,7 +23,7 @@ namespace FileFS.Client
     /// <summary>
     /// Implementation of client for working with FileFS storage.
     /// </summary>
-    public class FileFsClient : IFileFsClient, IDisposable
+    public sealed class FileFsClient : IFileFsClient, IDisposable
     {
         private readonly IFileRepository _fileRepository;
         private readonly IDirectoryRepository _directoryRepository;

@@ -13,7 +13,7 @@ namespace FileFS.DataAccess
     /// <summary>
     /// FileStream based storage initializer implementation.
     /// </summary>
-    public class StorageInitializer : IStorageInitializer
+    public sealed class StorageInitializer : IStorageInitializer
     {
         private readonly IStorageConnection _storageConnection;
         private readonly IStorageOperationLocker _storageOperationLocker;

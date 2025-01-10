@@ -12,7 +12,7 @@ using Serilog;
 namespace FileFS.Client
 {
     /// <summary>
-    /// Class that allows to create configured <see cref="IFileFsClient"/> instances.
+    /// sealed class that allows to create configured <see cref="IFileFsClient"/> instances.
     /// </summary>
     [ExcludeFromCodeCoverage]
     public static class FileFsClientFactory

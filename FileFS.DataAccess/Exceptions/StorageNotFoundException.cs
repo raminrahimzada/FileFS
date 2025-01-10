@@ -3,7 +3,7 @@
     /// <summary>
     /// Exception that should be thrown when storage not exists.
     /// </summary>
-    public class StorageNotFoundException : FileFsException
+    public sealed class StorageNotFoundException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="StorageNotFoundException"/> class.

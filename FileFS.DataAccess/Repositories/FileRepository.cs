@@ -14,7 +14,7 @@ namespace FileFS.DataAccess.Repositories
     /// <summary>
     /// File repository implementation.
     /// </summary>
-    public class FileRepository : EntryRepository, IFileRepository
+    public sealed class FileRepository : EntryRepository, IFileRepository
     {
         private readonly IStorageConnection _connection;
         private readonly IFileAllocator _allocator;

@@ -7,9 +7,9 @@ using Serilog;
 namespace FileFS.Client
 {
     /// <summary>
-    /// Class that allows to create configured <see cref="IStorageInitializer"/> instances.
+    /// sealed class that allows to create configured <see cref="IStorageInitializer"/> instances.
     /// </summary>
-    public class FileFsStorageInitializerFactory
+    public sealed class FileFsStorageInitializerFactory
     {
         /// <summary>
         /// Creates instance of <see cref="IStorageInitializer"/>.

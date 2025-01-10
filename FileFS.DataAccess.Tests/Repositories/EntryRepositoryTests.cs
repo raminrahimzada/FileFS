@@ -19,7 +19,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Repositories
 {
-    public class EntryRepositoryTests
+    public sealed class EntryRepositoryTests
     {
         private const int FileNameLength = 100;
 

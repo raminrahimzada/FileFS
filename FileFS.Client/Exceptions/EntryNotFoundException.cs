@@ -5,7 +5,7 @@ namespace FileFS.Client.Exceptions
     /// <summary>
     /// Exception that should be thrown when entry not found in FileFS storage.
     /// </summary>
-    public class EntryNotFoundException : FileFsException
+    public sealed class EntryNotFoundException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EntryNotFoundException"/> class.

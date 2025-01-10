@@ -3,7 +3,7 @@
     /// <summary>
     /// Exception that should be thrown when there is not enough space to allocate file data.
     /// </summary>
-    public class NotEnoughSpaceException : FileFsException
+    public sealed class NotEnoughSpaceException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NotEnoughSpaceException"/> class.

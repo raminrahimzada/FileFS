@@ -6,7 +6,7 @@ namespace FileFS.Client.Exceptions
     /// <summary>
     /// Exception that should be thrown when name is invalid for FileFS storage.
     /// </summary>
-    public class InvalidNameException : FileFsException
+    public sealed class InvalidNameException : FileFsException
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="InvalidNameException"/> class.

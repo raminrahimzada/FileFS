@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("exists", HelpText = "Check that file is exists in FileFS storage.")]
-    public class ExistsOptions : BaseOptions
+    public sealed class ExistsOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets name of a file to check.

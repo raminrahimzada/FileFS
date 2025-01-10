@@ -7,7 +7,7 @@ namespace FileFS.Cli.Options
     /// </summary>
     // ReSharper disable UnusedAutoPropertyAccessor.Global
     [Verb("list", HelpText = "List files inside FileFS storage.")]
-    public class ListOptions : BaseOptions
+    public sealed class ListOptions : BaseOptions
     {
         /// <summary>
         /// Gets or sets a value indicating whether additional details, such as size, created on and updated on will be displayed.

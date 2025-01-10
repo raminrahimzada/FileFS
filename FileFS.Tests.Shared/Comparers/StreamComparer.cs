@@ -7,7 +7,7 @@ namespace FileFS.Tests.Shared.Comparers
     /// <summary>
     /// Comparer implementation for <see cref="Stream"/>.
     /// </summary>
-    public class StreamComparer : IEqualityComparer<Stream>
+    public sealed class StreamComparer : IEqualityComparer<Stream>
     {
         /// <inheritdoc />
         public bool Equals(Stream x, Stream y)

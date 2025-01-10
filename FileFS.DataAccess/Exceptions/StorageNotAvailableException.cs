@@ -5,7 +5,7 @@ namespace FileFS.DataAccess.Exceptions
     /// <summary>
     /// Exception that should be thrown when there is an error accessing existing FileFS storage.
     /// </summary>
-    public class StorageNotAvailableException : Exception
+    public sealed class StorageNotAvailableException : Exception
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="StorageNotAvailableException"/> class.

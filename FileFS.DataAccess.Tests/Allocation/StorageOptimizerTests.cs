@@ -17,7 +17,7 @@ using Xunit;
 
 namespace FileFS.DataAccess.Tests.Allocation
 {
-    public class StorageOptimizerTests
+    public sealed class StorageOptimizerTests
     {
         private const int FileNameLength = 100;
 

@@ -23,7 +23,7 @@ using FileNotFoundException = FileFS.Client.Exceptions.FileNotFoundException;
 
 namespace FileFS.Client.Tests.FileFsClientTests
 {
-    public class FileFsClientFileTests
+    public sealed class FileFsClientFileTests
     {
         private readonly Mock<IFileRepository> _fileRepositoryMock;
         private readonly Mock<IExternalFileManager> _externalFileManagerMock;
