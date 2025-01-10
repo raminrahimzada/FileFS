@@ -147,7 +147,7 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(name))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(name))
@@ -175,11 +175,11 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(name))
-                .Returns(new[] { new FileFsEntryInfo(nextedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow) });
+                .Returns([new FileFsEntryInfo(nextedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow)]);
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(nextedDirectoryName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(name))
@@ -212,7 +212,7 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(name))
-                .Returns(new[] { new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow) });
+                .Returns([new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow)]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(name))
@@ -249,15 +249,15 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(name))
-                .Returns(new[]
-                {
+                .Returns(
+                [
                     new FileFsEntryInfo(nestedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow),
                     new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow),
-                });
+                ]);
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(nestedDirectoryName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(name))
@@ -311,7 +311,7 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(fromName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(fromName))
@@ -339,11 +339,11 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(fromName))
-                .Returns(new[] { new FileFsEntryInfo(fromNextedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow) });
+                .Returns([new FileFsEntryInfo(fromNextedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow)]);
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(fromNextedDirectoryName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(fromName))
@@ -376,7 +376,7 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(fromName))
-                .Returns(new[] { new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow) });
+                .Returns([new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow)]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(fromName))
@@ -413,15 +413,15 @@ namespace FileFS.Client.Tests.FileFsClientTests
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(fromName))
-                .Returns(new[]
-                {
+                .Returns(
+                [
                     new FileFsEntryInfo(nestedDirectoryName, EntryType.Directory, 0, DateTime.UtcNow, DateTime.UtcNow),
                     new FileFsEntryInfo(nestedFileName, EntryType.File, 0, DateTime.UtcNow, DateTime.UtcNow),
-                });
+                ]);
 
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(nestedDirectoryName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             _directoryRepositoryMock
                 .Setup(r => r.Exists(fromName))

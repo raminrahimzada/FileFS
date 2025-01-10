@@ -5,15 +5,11 @@ namespace FileFS.DataAccess.Exceptions
     /// <summary>
     /// Base exception for all known FileFS exceptions.
     /// </summary>
-    public abstract class FileFsException : Exception
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="FileFsException"/> class.
+    /// </remarks>
+    /// <param name="message">Exception message.</param>
+    public abstract class FileFsException(string message) : Exception(message)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FileFsException"/> class.
-        /// </summary>
-        /// <param name="message">Exception message.</param>
-        protected FileFsException(string message)
-            : base(message)
-        {
-        }
     }
 }

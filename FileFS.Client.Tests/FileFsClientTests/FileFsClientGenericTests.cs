@@ -394,7 +394,7 @@ namespace FileFS.Client.Tests.FileFsClientTests
             // Arrange
             _entryRepositoryMock
                 .Setup(r => r.GetEntriesInfo(PathConstants.RootDirectoryName))
-                .Returns(Array.Empty<FileFsEntryInfo>());
+                .Returns([]);
 
             // Act
             var files = _client.GetEntries(PathConstants.RootDirectoryName);

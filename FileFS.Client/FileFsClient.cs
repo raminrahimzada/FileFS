@@ -99,7 +99,7 @@ namespace FileFS.Client
         /// <exception cref="DirectoryNotFoundException">Throws if parent directory is not found.</exception>
         public void CreateFile(string fileName)
         {
-            CreateFile(fileName, Array.Empty<byte>());
+            CreateFile(fileName, []);
         }
 
         /// <inheritdoc />

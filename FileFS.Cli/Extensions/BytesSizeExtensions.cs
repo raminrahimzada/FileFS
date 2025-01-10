@@ -8,7 +8,7 @@ namespace FileFS.Cli.Extensions
     /// </summary>
     internal static class BytesSizeExtensions
     {
-        private static readonly string[] Measures = { "B", "KB", "MB", "GB", "TB", "PB", "EB" };
+        private static readonly string[] Measures = ["B", "KB", "MB", "GB", "TB", "PB", "EB"];
 
         /// <summary>
         /// Returns optimal string representation of given bytes size represented as 64-bit integer.
